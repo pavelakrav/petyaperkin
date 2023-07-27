@@ -14,10 +14,12 @@ import AppFooter from './components/AppFooter.js';
 function App() {
   return (
     <BrowserRouter>
-      <AppHeader />
-      {/* <NavBar /> */}
-      <AppRouter />
-      <AppFooter/>
+      <div className='AppWrapper'>
+        <AppHeader />
+        {/* <NavBar /> */}
+        <AppRouter />
+        <AppFooter />
+      </div>
     </BrowserRouter>
   );
 }

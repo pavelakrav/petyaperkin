@@ -1,6 +1,14 @@
 @import './reset.css';
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
 
+.AppWrapper {
+	display: flex;
+	width: 100vw;
+	height: 100vh;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
 :root {
 	/* Colors */
 	--blackpure: #000;
