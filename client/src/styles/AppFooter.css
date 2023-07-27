@@ -1,0 +1,13 @@
+.AppFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  height: 62px;
+
+  background: #6DC6B6;
+  color: #137C67;
+  font-family: 'Noto Sans';
+  font-weight: bold;
+  border-radius: 10px 10px 0 0 ;
+}

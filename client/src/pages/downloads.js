@@ -13,7 +13,7 @@ const downloads = observer(() => {
 	const normalLink = 'nav-list__link';
 
     return (
-        <div>About</div>
+        <div>downloads</div>
     )
 });
 

@@ -9,13 +9,15 @@ import AppRouter from './components/AppRouter';
 import "./styles/main.css"
 import "./styles/reset.css"
 import AppHeader from './components/AppHeader.js';
+import AppFooter from './components/AppFooter.js';
 
 function App() {
   return (
     <BrowserRouter>
       <AppHeader />
-      <NavBar />
+      {/* <NavBar /> */}
       <AppRouter />
+      <AppFooter/>
     </BrowserRouter>
   );
 }
