@@ -1,0 +1,30 @@
+.AppHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: 0 40px;
+
+        height: 144px;
+}
+
+.AppHeader__title {
+        font-family: 'Monoton', regular;
+        font-size: 96px;
+        text-transform: uppercase;
+        color: #23d6b3;
+}
+
+.AppHeader__button {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #B9F4E8;
+    opacity: 80%;
+
+    border-radius: 100%;
+}
