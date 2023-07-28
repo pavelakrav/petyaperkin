@@ -1,18 +1,19 @@
 .AppHeader {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        padding: 0 40px;
+    padding: 0 40px;
 
-        height: 144px;
+    height: 144px;
 }
 
 .AppHeader__title {
-        font-family: 'Monoton', regular;
-        font-size: 96px;
-        text-transform: uppercase;
-        color: #23d6b3;
+    font-family: "Monoton", regular;
+    font-size: 96px;
+    text-transform: uppercase;
+    color: #23d6b3;
+    z-index: 4;
 }
 
 .AppHeader__button {
@@ -23,7 +24,7 @@
     align-items: center;
     justify-content: center;
 
-    background: #B9F4E8;
+    background: #b9f4e8;
     opacity: 80%;
 
     border-radius: 100%;

@@ -22,7 +22,7 @@
 	margin-right: auto;
 	color: var(--nav-text);
 	font-size: 24px;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 .logo strong {
@@ -37,11 +37,17 @@
 	column-gap: 40px;
 	font-size: 16px;
 	font-weight: 500;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
-.nav-list__link {
+/* .nav-list__link {
 	color: var(--nav-text);
+	transition: opacity 0.2s ease-in;
+} */
+.nav-list__link {
+	color: white;
+	font-size: 40px;
+	font-family: "Noto Sans";
 	transition: opacity 0.2s ease-in;
 }
 
@@ -51,10 +57,11 @@
 
 .nav-list__link--active {
 	position: relative;
+	text-decoration: underline red;
 }
 
 .nav-list__link--active::before {
-	content: '';
+	content: "";
 
 	position: absolute;
 	left: 0;
