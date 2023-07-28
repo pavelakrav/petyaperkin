@@ -17,11 +17,18 @@ const NavBar = observer(() => {
         <nav className='nav'>
             <div className='container'>
                 <div className='nav-row'>
-                    <NavLink to='/' className='logo'>
-                        <strong>AWINGEN</strong>
-                    </NavLink>
-
                     <ul className='nav-list'>
+                        <li className='nav-list__item'>
+                            <NavLink
+                                to='/'
+                                className={({ isActive }) =>
+                                    isActive ? activeLink : normalLink
+                                }
+                            >
+                                AWINGEN
+                            </NavLink>
+                        </li>
+
                         <li className='nav-list__item'>
                             <NavLink
                                 to='/about'
@@ -59,7 +66,6 @@ const NavBar = observer(() => {
                                 className={({ isActive }) =>
                                     isActive ? activeLink : normalLink
                                 }
-                                //onClick={() => logOut()}
                             >
                                 Videos
                             </NavLink>
