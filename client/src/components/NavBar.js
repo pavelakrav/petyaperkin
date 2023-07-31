@@ -25,7 +25,7 @@ const NavBar = observer(() => {
                                     isActive ? activeLink : normalLink
                                 }
                             >
-                                AWINGEN
+                                Main
                             </NavLink>
                         </li>
 
@@ -57,7 +57,7 @@ const NavBar = observer(() => {
                                     isActive ? activeLink : normalLink
                                 }
                             >
-                                Keyses
+                                Key features
                             </NavLink>
                         </li>
                         <li className='nav-list__item'>
