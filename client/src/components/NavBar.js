@@ -34,7 +34,7 @@ const NavBar = observer(() => {
                                     isActive ? activeLink : normalLink
                                 }
                             >
-                                About
+                                Use cases
                             </NavLink>
                         </li>
 
