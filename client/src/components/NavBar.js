@@ -1,26 +1,24 @@
-import React, { useContext } from "react";
-import { Context } from "../index";
-// import Navbar from "react-bootstrap/Navbar";
-// import Nav from "react-bootstrap/Nav";
-import { NavLink, Navigate } from "react-router-dom";
-import { Button } from "react-bootstrap";
-import { observer } from "mobx-react-lite";
-import Container from "react-bootstrap/Container";
-import { useNavigate } from "react-router-dom";
-import "./stylenav.css";
+import React, { useContext } from 'react';
+import { Context } from '../index';
+import { NavLink, Navigate } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
+import { observer } from 'mobx-react-lite';
+import Container from 'react-bootstrap/Container';
+import { useNavigate } from 'react-router-dom';
+import './stylenav.css';
 
 const NavBar = observer(() => {
-    const activeLink = "nav-list__link nav-list__link--active";
-    const normalLink = "nav-list__link";
+    const activeLink = 'nav-list__link nav-list__link--active';
+    const normalLink = 'nav-list__link';
 
     return (
-        <nav className='nav'>
-            <div className='container'>
-                <div className='nav-row'>
-                    <ul className='nav-list'>
-                        <li className='nav-list__item'>
+        <nav className="nav">
+            <div className="container">
+                <div className="nav-row">
+                    <ul className="nav-list">
+                        <li className="nav-list__item">
                             <NavLink
-                                to='/'
+                                to="/"
                                 className={({ isActive }) =>
                                     isActive ? activeLink : normalLink
                                 }
@@ -29,9 +27,9 @@ const NavBar = observer(() => {
                             </NavLink>
                         </li>
 
-                        <li className='nav-list__item'>
+                        <li className="nav-list__item">
                             <NavLink
-                                to='/about'
+                                to="/about"
                                 className={({ isActive }) =>
                                     isActive ? activeLink : normalLink
                                 }
@@ -40,9 +38,9 @@ const NavBar = observer(() => {
                             </NavLink>
                         </li>
 
-                        <li className='nav-list__item'>
+                        <li className="nav-list__item">
                             <NavLink
-                                to='/downloads'
+                                to="/downloads"
                                 className={({ isActive }) =>
                                     isActive ? activeLink : normalLink
                                 }
@@ -50,9 +48,9 @@ const NavBar = observer(() => {
                                 Downloads
                             </NavLink>
                         </li>
-                        <li className='nav-list__item'>
+                        <li className="nav-list__item">
                             <NavLink
-                                to='/keys'
+                                to="/keys"
                                 className={({ isActive }) =>
                                     isActive ? activeLink : normalLink
                                 }
@@ -60,9 +58,9 @@ const NavBar = observer(() => {
                                 Key features
                             </NavLink>
                         </li>
-                        <li className='nav-list__item'>
+                        <li className="nav-list__item">
                             <NavLink
-                                to='/videos'
+                                to="/videos"
                                 className={({ isActive }) =>
                                     isActive ? activeLink : normalLink
                                 }

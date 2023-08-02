@@ -1,0 +1,35 @@
+.SideMenu__wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 2;
+}
+
+.Modal__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: 2;
+}

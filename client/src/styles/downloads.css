@@ -1,9 +1,49 @@
 .cardsList {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
 
-        background: linear-gradient(white, #bbf2e8d4 70%);
+    background: linear-gradient(white, #bbf2e8d4 70%);
+}
+
+.filesList {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+
+    max-height: 40vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filesList ul {
+    list-style: none;
+    padding-right: 25px;
+    max-height: 40vh;
+    overflow-y: scroll;
+}
+
+.filesList li {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Noto Sans';
+    margin-bottom: 10px;
+}
+
+.filesList a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Noto Sans';
+    font-weight: bold;
+    color: #137c67;
+    transition:  0.25s;
+}
+
+.filesList a:hover {
+    transition: 0.25s;
+    opacity: 0.5;
 }
