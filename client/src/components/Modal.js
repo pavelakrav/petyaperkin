@@ -5,7 +5,8 @@ import { createPortal } from 'react-dom';
 const menuWrapper = document.getElementById('menu');
 
 export default function Modal({ children, type, onClose }) {
-    const modalClass = type === 'SideMenu' ? 'SideMenu__wrapper' : 'Modal__wrapper'
+    const modalClass =
+        type === 'SideMenu' ? 'SideMenu__wrapper' : 'Modal__wrapper';
     useEffect(() => {
         const handleEsc = (event) => {
             if (event.key === 'Escape') {
@@ -18,7 +19,9 @@ export default function Modal({ children, type, onClose }) {
         };
     }, [onClose]);
     return createPortal(
-        <div className={modalClass}>{children}</div>,
+        <div className={modalClass} onClick={onClose}>
+            {children}
+        </div>,
         menuWrapper
     );
 }

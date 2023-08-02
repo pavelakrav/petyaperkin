@@ -1,27 +1,25 @@
-
 import React, { useContext, useEffect, useState } from 'react';
-import { BrowserRouter } from "react-router-dom";
-import NavBar from "./components/NavBar.js";
-import { observer } from "mobx-react-lite";
-import { Context } from "./index";
-import { Spinner } from "react-bootstrap";
+import { BrowserRouter } from 'react-router-dom';
+import NavBar from './components/NavBar.js';
+import { observer } from 'mobx-react-lite';
+import { Context } from './index';
+import { Spinner } from 'react-bootstrap';
 import AppRouter from './components/AppRouter';
-import "./styles/main.css"
-import "./styles/reset.css"
+import './styles/main.css';
+import './styles/reset.css';
 import AppHeader from './components/AppHeader.js';
 import AppFooter from './components/AppFooter.js';
 
 function App() {
-  return (
-    <BrowserRouter>
-      <div className='AppWrapper'>
-        <AppHeader />
-        {/* <NavBar /> */}
-        <AppRouter />
-        <AppFooter />
-      </div>
-    </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <div className="AppWrapper">
+                <AppHeader />
+                <AppRouter />
+                <AppFooter />
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
