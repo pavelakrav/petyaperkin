@@ -20,6 +20,7 @@
     font-size: 26px;
     font-family: "Noto Sans";
     font-weight: bold;
+    text-align: center;
 }
 
 .card__button {
@@ -28,6 +29,7 @@
 .card__text {
     font-family: "Noto Sans";
     font-weight: lighter;
+    text-align: center;
 }
 
 .card__hat {
