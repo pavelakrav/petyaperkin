@@ -1,7 +1,7 @@
 export const BurgerMenuIcon = function ({
     size = 10,
     color = "black",
-    onClick = () => {},
+    onClick = () => { },
 }) {
     return (
         <svg
@@ -23,12 +23,12 @@ export const BurgerMenuIcon = function ({
 export const DownloadIcon = function ({
     size = 10,
     color = "black",
-    onClick = () => {},
+    onClick = () => { },
 }) {
     return (
         <svg
-            width='26'
-            height='28'
+            width={size}
+            height={size}
             viewBox='0 0 26 28'
             fill='none'
             xmlns='http://www.w3.org/2000/svg'
@@ -44,7 +44,7 @@ export const DownloadIcon = function ({
 export const EVIcon = function ({
     size = 10,
     color = "black",
-    onClick = () => {},
+    onClick = () => { },
 }) {
     return (
         <svg
@@ -64,7 +64,7 @@ export const EVIcon = function ({
 export const LightBuldIcon = function ({
     size = 10,
     color = "black",
-    onClick = () => {},
+    onClick = () => { },
 }) {
     return (
         <svg
@@ -84,7 +84,7 @@ export const LightBuldIcon = function ({
 export const TreeIcon = function ({
     size = 10,
     color = "black",
-    onClick = () => {},
+    onClick = () => { },
 }) {
     return (
         <svg
@@ -104,7 +104,7 @@ export const TreeIcon = function ({
 export const QuickIcon = function ({
     size = 10,
     color = "black",
-    onClick = () => {},
+    onClick = () => { },
 }) {
     return (
         <svg
@@ -128,7 +128,7 @@ export const QuickIcon = function ({
 export const CancelIcon = function ({
     size = 10,
     color = "black",
-    onClick = () => {},
+    onClick = () => { },
 }) {
     return (
         <svg

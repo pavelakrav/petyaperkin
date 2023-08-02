@@ -17,19 +17,20 @@ import {
 const keyses = observer(() => {
     const iconSize = 50;
     const CardContent = [
-        { title: "Eco friendly", icon: <TreeIcon size={iconSize} /> },
-        { title: "Quick installation", icon: <QuickIcon size={iconSize} /> },
+        { title: "Eco friendly", icon: <TreeIcon size={iconSize} />, text: 'no extra space required' },
+        { title: "Quick installation", icon: <QuickIcon size={iconSize} />, text: 'much faster than competitors' },
         {
             title: "Highway illumination",
             icon: <LightBuldIcon size={iconSize} />,
+            text: 'enhanced safety'
         },
-        { title: "EV charging", icon: <EVIcon size={iconSize} /> },
+        { title: "EV charging", icon: <EVIcon size={iconSize} />, text: 'electricity for remote locations' },
     ];
 
     return (
         <div className='cardsList'>
             {CardContent.map((content) => {
-                return <Card title={content.title} icon={content.icon} />;
+                return <Card {...content} />;
             })}
         </div>
     );

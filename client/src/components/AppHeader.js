@@ -1,7 +1,8 @@
-import React, { useState } from "react";
-import "../styles/AppHeader.css";
-import { BurgerMenuIcon, CancelIcon } from "./Icons";
-import SideMenu from "./SideMenu";
+import React, { useState } from 'react';
+import '../styles/AppHeader.css';
+import { BurgerMenuIcon, CancelIcon } from './Icons';
+import Modal from './Modal';
+import NavBar from './NavBar';
 
 export default function AppHeader() {
     const [isMenuOpened, setIsMenuOpened] = useState(false);
@@ -9,16 +10,20 @@ export default function AppHeader() {
         setIsMenuOpened(!isMenuOpened);
     };
     return (
-        <div className='AppHeader'>
-            <div className='AppHeader__title'>Awingen</div>
-            <div className='AppHeader__button' onClick={changeMenuVisibility}>
+        <div className="AppHeader">
+            <div className="AppHeader__title">Awingen</div>
+            <div className="AppHeader__button" onClick={changeMenuVisibility}>
                 {isMenuOpened ? (
-                    <CancelIcon size={40} color='#137C67' />
+                    <CancelIcon size={40} color="#137C67" />
                 ) : (
-                    <BurgerMenuIcon size={40} color='#137C67' />
+                    <BurgerMenuIcon size={40} color="#137C67" />
                 )}
 
-                {isMenuOpened && <SideMenu onClose={changeMenuVisibility} />}
+                {isMenuOpened && (
+                    <Modal type={'SideMenu'} onClose={changeMenuVisibility}>
+                        <NavBar />
+                    </Modal>
+                )}
             </div>
         </div>
     );
