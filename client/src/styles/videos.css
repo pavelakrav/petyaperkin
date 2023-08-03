@@ -29,38 +29,25 @@ header {
   transition: 0.4s;
 }
 
-  h1 {
-    font-family: c;
-    text-align: center;
-    top: 1000px;
-    font-size: 2rem;
-    width: 100%;
-    letter-spacing: .5rem;
-    mix-blend-mode: overlay;
-  }
-  nav a {
-    text-decoration: none;
-    color: inherit;
-    padding: 1rem;
-  }
-  h2 { 
-    font-family: Hind Vadodara;
-    font-size: 8vmin;
-    margin-bottom: 500px;
-    text-align: center;
-    /* margin: rem 1rem 0; */
-    mix-blend-mode: overlay;
-    color: #000;
-    font-weight: 100;
-  }
-
-.image35{
-
-position: absolute;
-width: 61px;
-height: 65px;
-left: 317px;
-top: 162px;
-
-background: url(image.png);
+h1 {
+  text-align: center;
+  /* top: 1000px; */
+  font-size: 2rem;
+  width: 100%;
+  letter-spacing: 0.5rem;
+  mix-blend-mode: overlay;
+}
+nav a {
+  text-decoration: none;
+  color: inherit;
+  padding: 1rem;
+}
+h2 {
+  font-family: Hind Vadodara;
+  font-size: 8vmin;
+  text-align: center;
+  margin: -15rem 0 0 0;
+  mix-blend-mode: overlay;
+  color: #000;
+  font-weight: 100;
 }
