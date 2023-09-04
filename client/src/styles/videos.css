@@ -60,7 +60,7 @@ header {
     color: #000;
     font-weight: 100;
   }
-  .play_btn: hover{
+  .play_btn :hover{
     cursor:pointer;
   }
   
