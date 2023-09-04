@@ -8,6 +8,7 @@ import Container from 'react-bootstrap/Container';
 import { useNavigate } from 'react-router-dom';
 import Awingen_Trim from './Awingen_Trim.mp4';
 import '../styles/videos.css';
+import Awingen_Turbine from "./Awingen_Turbine.mp4"
 
 const main = observer(() => {
     const activeLink = 'nav-list__link nav-list__link--active';
@@ -15,7 +16,7 @@ const main = observer(() => {
 
     return (
         <>
-            <video className="videoTag" autoPlay loop>
+            <video className="videoTag" autoPlay preload='auto' muted loop>
                 <source src={Awingen_Trim} type="video/mp4" />
             </video>
             <div id="fashion">

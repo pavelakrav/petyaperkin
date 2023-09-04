@@ -54,50 +54,16 @@ header {
     color: #000;
     font-weight: 100;
   }
-  .smallVideo{
-    position:absolute;
-    max-width:260px;
-    width:100%;
-    height:100%;
-    border-radius: 30px;
-    z-index:1
-  }
-  .play_btn{
-    position:center;
-    margin-left:35%;
-    z-index:2;
-    max-width:50px;
-  }
-  .Modal__Video1{
-    position:relative;
-    align-items:center;
-    margin-top:0%;
-    margin-left:0%;
-    max-width:1000px;
-    max-height:450px;
-    width:100%;
-    height:100%;
-    border-radius: 30px;
-    z-index:1
-  }
 
+/* .image35{
 
-  .play_btn: hover{
-    cursor:pointer;
-  }
+position: absolute;
+width: 61px;
+height: 65px;
+left: 317px;
+top: 162px;
+
+background: url(image.png);
+} */
+
   
-  div#player{
-    position:center;
-    margin-left:50%;
-    max-width: 300px;
-    width:100%;
-    border-radius: 30px;
-    .video{
-      max-width:100%;
-      border-radius:30px;
-    }
-    .controls{
-
-    }
-
-  }

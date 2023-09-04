@@ -10,6 +10,11 @@ import '../styles/downloads.css';
 import Card from '../components/Card';
 import { DownloadIcon } from '../components/Icons';
 import Modal from '../components/Modal';
+import "../styles/videos.css"
+import playBtn from "../images/play.png"
+import "../images/play.svg"
+import Awingen_Trim from './Awingen_Trim.mp4';
+import ExampleVideo from '../images/ImageVideoExample.png'
 
 const downloads = observer(() => {
     const [isModalVisible, setIsModalVisible] = useState(false);
@@ -64,11 +69,13 @@ const downloads = observer(() => {
             <div className="cardsList">
                 {CardContent.map((title) => {
                     return (
+                        <>
                         <Card
                             title={title}
                             icon={<DownloadIcon size={50} />}
-                            onClick={onClickHandler}
+                            onClick={onClickHandler}   
                         />
+                        </>
                     );
                 })}
             </div>
