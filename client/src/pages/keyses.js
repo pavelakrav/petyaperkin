@@ -33,7 +33,6 @@ const keyses = observer(() => {
                 return <Card {...content} />;
             })}
         </div>
-        
     );
 });
 
