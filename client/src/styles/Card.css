@@ -40,6 +40,9 @@
 
 .card__button {
 }
+.card__button:hover{
+    cursor:pointer;
+}
 
 .card__text {
     font-family: "Noto Sans";
