@@ -71,6 +71,7 @@ const videos = observer(() => {
                             playsInline
                             disablePictureInPicture
                             controls
+                            autoPlay
                         >
                             <source src={Awingen_Trim} type="video/mp4" />
                         </video>
