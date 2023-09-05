@@ -17,7 +17,7 @@ const main = observer(() => {
 
     return (
         <>
-            <video className="videoTag" autoPlay muted loop>
+            <video className="videoTag" autoPlay muted playsInline disablePictureInPicture loop>
                 <source className='video_Link' src={Awingen_Turbine} type="video/mp4" />
             </video>
             <div id="fashion">
