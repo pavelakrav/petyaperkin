@@ -7,6 +7,7 @@ import { Spinner } from 'react-bootstrap';
 import AppRouter from './components/AppRouter';
 import './styles/main.css';
 import './styles/reset.css';
+import './styles/adaptive.css';
 import AppHeader from './components/AppHeader.js';
 import AppFooter from './components/AppFooter.js';
 

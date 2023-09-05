@@ -3,6 +3,7 @@ import '../styles/AppHeader.css';
 import { BurgerMenuIcon, CancelIcon } from './Icons';
 import Modal from './Modal';
 import NavBar from './NavBar';
+import "../styles/adaptive.css"
 
 export default function AppHeader() {
     const [isMenuOpened, setIsMenuOpened] = useState(false);

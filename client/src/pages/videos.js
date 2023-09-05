@@ -13,6 +13,7 @@ import { DownloadIcon } from '../components/Icons';
 import Modal from '../components/Modal';
 import ReactPlayer from 'react-player'
 import "../styles/videos.css"
+import "../styles/adaptive.css"
 import playBtn from "../images/play.png"
 import "../images/play.svg"
 import Awingen_Trim from './Awingen_Trim.mp4';
@@ -23,11 +24,9 @@ import Awingen_Prewiev from "../images/Awingen_Preview.png"
 
 
 const videos = observer(() => {
-    const [isModalVisible, setIsModalVisible] = useState(true);
-    const [dirName, setdirName] = useState('');
+    const [isModalVisible, setIsModalVisible] = useState(false);
     const onClickHandler = (event, name) => {
         setIsModalVisible(!isModalVisible);
-        setdirName(name);
     };
     const files = [
             ];
@@ -43,13 +42,13 @@ const videos = observer(() => {
     return (
         <>  
         
-        <div className="cardsList">
+        <div className="cardsListVideos">
             {CardContent.map((content) => {
                 return (
                     <>
                     <div className="cardVideos">
                                 <img src = {Awingen_Prewiev} className='smallVideo'/>
-                                <a href="" className='play_btn' onClick = {onClickHandler}>
+                                <a className='play_btn' onClick = {onClickHandler}>
                                 <img src={playBtn} className='play_btn'/>
                                 </a>    
                     </div>

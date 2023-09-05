@@ -8,6 +8,7 @@ import Container from 'react-bootstrap/Container';
 import { useNavigate } from 'react-router-dom';
 import Awingen_Trim from './Awingen_Trim.mp4';
 import '../styles/videos.css';
+import '../styles/adaptive.css';
 import Awingen_Turbine from "./Awingen_Turbine.mp4"
 
 const main = observer(() => {
@@ -17,7 +18,7 @@ const main = observer(() => {
     return (
         <>
             <video className="videoTag" autoPlay preload='auto' muted loop>
-                <source src={Awingen_Trim} type="video/mp4" />
+                <source className='video_Link' src={Awingen_Turbine} type="video/mp4" />
             </video>
             <div id="fashion">
                 <h2>

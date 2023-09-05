@@ -7,6 +7,7 @@ import { observer } from "mobx-react-lite";
 import Container from "react-bootstrap/Container";
 import { useNavigate } from "react-router-dom";
 import Card from "../components/Card";
+import "../styles/adaptive.css"
 import {
     EVIcon,
     LightBuldIcon,

@@ -10,6 +10,7 @@ import '../styles/downloads.css';
 import Card from '../components/Card';
 import { DownloadIcon } from '../components/Icons';
 import Modal from '../components/Modal';
+import "../styles/adaptive.css"
 import "../styles/videos.css"
 import playBtn from "../images/play.png"
 import "../images/play.svg"
