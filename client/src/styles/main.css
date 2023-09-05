@@ -4,7 +4,7 @@
 .AppWrapper {
 	display: flex;
 	width: 100vw;
-	height: 100vh;
+	//height: 100vh;
 	justify-content: space-between;
 	flex-direction: column;
 }
@@ -13,7 +13,6 @@
 	display: flex;
 	align-items: center;
 	height: 100%;
-
 }
 
 :root {
@@ -317,4 +316,15 @@ body {
 	.social__item {
 		width: 28px;
 	}
+}
+
+@media only screen and (min-width: 1000px){
+	  .AppWrapper {
+		display: flex;
+		width: 100vw;
+		height: 100vh;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	
 }

@@ -15,14 +15,13 @@
     .cardsList{
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-around;
         flex-direction:column;
         width: 100%;
         height: 100%;
-        max-height: 100%;
-
-        gap: 50px;
-        padding: 50px 0 ;
+        gap: 90px;
+        padding-top:200px;
+        padding-bottom:200px;
 
         background: linear-gradient(white, #bbf2e8d4 70%);
       }
