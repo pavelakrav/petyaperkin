@@ -52,16 +52,7 @@
       
         z-index: 4;
       }
-      .cardsList{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction:column;
-        width: 100%;
-        height: 100%;
-    
-        background: linear-gradient(white, #bbf2e8d4 70%);
-      }
+      
       .cardVideos{
         position: relative;
         width: 400px;

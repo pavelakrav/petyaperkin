@@ -9,6 +9,13 @@
 	flex-direction: column;
 }
 
+.AppContent {
+	display: flex;
+	align-items: center;
+	height: 100%;
+
+}
+
 :root {
 	/* Colors */
 	--blackpure: #000;
