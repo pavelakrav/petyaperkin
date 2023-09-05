@@ -21,9 +21,8 @@
         height: 100%;
         max-height: 100%;
 
-        overflow-y: scroll;
-
-        gap: 20px;
+        gap: 50px;
+        padding: 50px 0 ;
 
         background: linear-gradient(white, #bbf2e8d4 70%);
       }
