@@ -7,6 +7,7 @@
 	min-height: 100vh;
 	justify-content: space-between;
 	flex-direction: column;
+	background: linear-gradient(white, #bbf2e8d4 70%);
 }
 
 .AppContent {

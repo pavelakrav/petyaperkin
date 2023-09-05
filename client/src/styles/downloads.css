@@ -6,9 +6,7 @@
     width: 100%;
     height: 100%;
 
-
-    overflow-y: scroll;
-    background: linear-gradient(white, #bbf2e8d4 70%);
+    
 }
 
 @media only screen and (max-width: 1000px){
@@ -23,7 +21,6 @@
         padding-top:200px;
         padding-bottom:200px;
 
-        background: linear-gradient(white, #bbf2e8d4 70%);
       }
 }
 
