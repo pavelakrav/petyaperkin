@@ -19,7 +19,7 @@ export default function ModalVideo({ children, type, onClose }) {
         };
     }, [onClose]);
     return createPortal(
-        <div className={modalClass}>
+        <div className={modalClass} onClick={onClose}>
             {children}
         </div>,
         menuWrapper
