@@ -4,7 +4,7 @@
 .AppWrapper {
 	display: flex;
 	width: 100vw;
-	//height: 100vh;
+	min-height: 100vh;
 	justify-content: space-between;
 	flex-direction: column;
 }
@@ -68,7 +68,7 @@ body {
 	letter-spacing: -0.5px;
 
 	/* Light mode */
-	background-color: var(--page-bg);
+	/* background-color: var(--page-bg); */
 	color: var(--text-color);
 }
 
@@ -316,15 +316,4 @@ body {
 	.social__item {
 		width: 28px;
 	}
-}
-
-@media only screen and (min-width: 1000px){
-	.AppWrapper {
-	  display: flex;
-	  width: 100vw;
-	  height: 100vh;
-	  justify-content: space-between;
-	  flex-direction: column;
-  }
-  
 }
