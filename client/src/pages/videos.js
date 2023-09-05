@@ -59,9 +59,9 @@ const videos = observer(() => {
         </div>
         {isModalVisible && (
                 <ModalVideo type={'Modal'} onClose={onClickHandler}>
-                    <video className="Modal__Video1" playsInline disablePictureInPicture controls>
-                        <source src={Awingen_Trim} type="video/mp4" />
-                    </video>
+                        <video className="Modal__Video1" playsInline disablePictureInPicture controls>
+                            <source src={Awingen_Trim} type="video/mp4" />
+                        </video>
                 </ModalVideo>
             )}
         </>
