@@ -1,8 +1,8 @@
 import React from 'react';
 import { observer } from 'mobx-react-lite';
-import '../styles/about.css';
+import styles from '../styles/about.module.css';
 import '../styles/adaptive.css';
-import example_Pic from '../images/p1.jpg';
+import Card from '../components/Card';
 
 const about = observer(() => {
 	const cardsContent = [
@@ -25,22 +25,12 @@ const about = observer(() => {
 	];
 
 	return (
-		<div className="cardsList">
-			{cardsContent.map((content) => {
-				return (
-					<div className="card">
-						<div className="card__pic">
-							<img
-								className="photo"
-								src={example_Pic}
-								alt="pic"
-							/>
-						</div>
-						<div className="card__title">{content.title}</div>
-						<div className="card__text">{content.text}</div>
-					</div>
-				);
-			})}
+		<div className="about__container">
+			<div className={styles.cardsList}>
+				{cardsContent.map((content) => {
+					return <Card text={content.text} title={content.title} />;
+				})}
+			</div>
 		</div>
 	);
 });
