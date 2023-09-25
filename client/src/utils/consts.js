@@ -1,5 +1,9 @@
-export const MAIN_ROUTE = '/main';
+export const HOME_ROUTE = '/home';
 export const ABOUT_ROUTE = '/about';
-export const DOWNWLOADS_ROUTE = '/downloads';
-export const KEYS_ROUTE = '/keys';
-export const VIDEOS_ROUTE = '/videos';
+export const PATENTS_ROUTE = '/patents';
+export const PRODUCT_ROUTE = '/product';
+export const USE_CASES_ROUTE = '/useCases';
+export const FOR_INVESTORS = '/investors';
+export const CONTACTS = '/contacts';
+
+export const MOBILE_WIDTH = 500;

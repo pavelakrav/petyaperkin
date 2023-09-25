@@ -1,71 +1,135 @@
 .AppHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 
-    padding: 0 40px;
+	height: 100px;
 
-    height: 144px;
+	background: var(--bg-color-dark);
 }
 
+.AppHeader__title__container {
+}
 .AppHeader__title {
-    font-family: "Monoton", regular;
-    font-size: 96px;
-    text-transform: uppercase;
-    color: #23d6b3;
-    z-index: 4;
-    text-decoration: none;
+	font-family: 'Mukta', sans-serif;
+	font-weight: bold;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: var(--font-color-light);
+	z-index: 4;
+	text-decoration: none;
+}
+
+.AppHeader__subtitle {
+	font-family: 'Mukta', sans-serif;
+	font-size: 18px;
+	color: var(--font-color-light);
+	opacity: 0.6;
+	z-index: 4;
+	text-decoration: none;
+
+	padding: 0;
+	margin: 0 0 0 40px;
 }
 
 .AppHeader__button {
-    width: 70px;
-    height: 70px;
+	width: 70px;
+	height: 70px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-    background: #b9f4e8;
-    opacity: 80%;
+	background: #b9f4e8;
+	opacity: 80%;
 
-    border-radius: 100%;
-    z-index: 4;
+	border-radius: 100%;
+	z-index: 4;
 }
 
-@media only screen and (max-width: 1000px){
-    .AppHeader__title {
-        font-family: "Monoton", regular;
-        font-size: 96px;
-        text-transform: uppercase;
-        color: #23d6b3;
-        z-index: 4;
-    }
-    .cardsListVideos{
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction:column;
-        width: 100%;
-        height: 100%;
-    
-        background: linear-gradient(white, #bbf2e8d4 70%);
-    }
-    .AppFooter {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      
-        max-height: 30%;
-        width:100%;
-      
-        background: #6dc6b6;
-        color: #137c67;
-        font-family: "Noto Sans";
-        font-weight: bold;
-        border-radius: 10px 10px 0 0;
-      
-        z-index: 4;
-      }
-    
-      
+.AppHeader__linkList {
+	display: flex;
+	gap: 25px;
+}
+
+.AppHeader__link {
+	position: relative;
+	color: var(--font-color-light);
+	text-decoration: none;
+	font-size: 24px;
+	transition: 0.25s ease-in;
+}
+
+.AppHeader__link::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--mark-color);
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+.AppHeader__link:hover::after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+}
+
+.AppHeader__link__active {
+	position: relative;
+	color: var(--font-color-light);
+	text-decoration: none;
+	font-size: 24px;
+	transition: 0.25s ease-in;
+}
+
+.AppHeader__link__active::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 3px;
+	bottom: 0;
+	left: 0;
+	background-color: var(--mark-color);
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+}
+
+@media only screen and (max-width: 1000px) {
+	.AppHeader__title {
+		font-family: 'Mukta', sans-serif;
+		font-size: 96px;
+		text-transform: uppercase;
+		color: #23d6b3;
+		z-index: 4;
+	}
+	.cardsListVideos {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+
+		background: linear-gradient(white, #bbf2e8d4 70%);
+	}
+	.AppFooter {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+
+		max-height: 30%;
+		width: 100%;
+
+		background: #6dc6b6;
+		color: #137c67;
+		font-family: 'Noto Sans';
+		font-weight: bold;
+		border-radius: 10px 10px 0 0;
+
+		z-index: 4;
+	}
 }
