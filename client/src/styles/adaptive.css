@@ -5,8 +5,9 @@
         justify-content: space-around;
         width: 100%;
         height: 100%;
+
+        gap: 70px;
     
-        background: linear-gradient(white, #bbf2e8d4 70%);
     }
 }
 
@@ -33,8 +34,6 @@
         flex-direction:column;
         width: 100%;
         height: 100%;
-    
-        background: linear-gradient(white, #bbf2e8d4 70%);
     }
     .AppFooter {
         display: flex;

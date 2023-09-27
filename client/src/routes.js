@@ -1,33 +1,48 @@
 // import Admin from "./pages/Admin";
-import {KEYS_ROUTE, VIDEOS_ROUTE, ABOUT_ROUTE, DOWNWLOADS_ROUTE, MAIN_ROUTE} from "./utils/consts";
-import main from "./pages/main";
-import about from "./pages/about";
-import downloads from "./pages/downloads";
-import { keys } from "mobx";
-import videos from "./pages/videos";
-import keyses from "./pages/keyses";
+import {
+	HOME_ROUTE,
+	PATENTS_ROUTE,
+	PRODUCT_ROUTE,
+	USE_CASES_ROUTE,
+	FOR_INVESTORS,
+	CONTACTS,
+	ABOUT_ROUTE,
+} from './utils/consts';
+import home from './pages/home';
+import about from './pages/about';
+import cases from './pages/cases';
+import patents from './pages/patents';
+import product from './pages/product';
+import investors from './pages/investors';
+import contacts from './pages/contacts';
 
 export const publicRoutes = [
-
-    {
-        path: MAIN_ROUTE,
-        Component: main
-    },
-    {
-        path: ABOUT_ROUTE,
-        Component: about
-    },
-    {
-        path: DOWNWLOADS_ROUTE,
-        Component: downloads
-    },
-    {
-        path: KEYS_ROUTE,
-        Component: keyses
-    },
-    {
-        path: VIDEOS_ROUTE,
-        Component: videos
-    },
-
-]
+	{
+		path: HOME_ROUTE,
+		Component: home,
+	},
+	{
+		path: ABOUT_ROUTE,
+		Component: about,
+	},
+	{
+		path: PATENTS_ROUTE,
+		Component: patents,
+	},
+	{
+		path: PRODUCT_ROUTE,
+		Component: product,
+	},
+	{
+		path: USE_CASES_ROUTE,
+		Component: cases,
+	},
+	{
+		path: FOR_INVESTORS,
+		Component: investors,
+	},
+	{
+		path: CONTACTS,
+		Component: contacts,
+	},
+];

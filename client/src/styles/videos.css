@@ -69,8 +69,6 @@ header {
     justify-content: space-around;
     width: 100%;
     height: 100%;
-
-    background: linear-gradient(white, #bbf2e8d4 70%);
 }
   div#player{
     position:center;
