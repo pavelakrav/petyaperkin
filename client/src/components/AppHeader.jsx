@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import '../styles/AppHeader.css';
 import { BurgerMenuIcon, CancelIcon } from './Icons';
 import Modal from './Modal';
 import NavBar from './NavBar';
 import '../styles/adaptive.css';
+import styles from '../styles/AppHeader.module.css';
 import { NavLink } from 'react-router-dom';
 
 import { useResize } from '../hooks/useResize';
@@ -36,16 +36,18 @@ export default function AppHeader() {
 		{ path: CONTACTS, label: 'Contacts' },
 	];
 	return (
-		<div className="AppHeader">
-			<div className="AppHeader__title__container">
-				<NavLink className="AppHeader__title" to="/home">
+		<div className={styles.AppHeader}>
+			<div className={styles.AppHeader__title__container}>
+				<NavLink className={styles.AppHeader__title} to="/home">
 					Awingen
 				</NavLink>
-				<p className="AppHeader__subtitle">Highway wind turbines</p>
+				<p className={styles.AppHeader__subtitle}>
+					Highway wind turbines
+				</p>
 			</div>
 			{width < MOBILE_WIDTH ? (
 				<div
-					className="AppHeader__button"
+					className={styles.AppHeader__button}
 					onClick={changeMenuVisibility}
 				>
 					{isMenuOpened ? (
@@ -61,14 +63,14 @@ export default function AppHeader() {
 					)}
 				</div>
 			) : (
-				<div className="AppHeader__linkList">
+				<div className={styles.AppHeader__linkList}>
 					{NavElements.map((el) => {
 						return (
 							<NavLink
 								className={({ isActive }) => {
 									return isActive
-										? 'AppHeader__link__active'
-										: 'AppHeader__link';
+										? styles.AppHeader__link__active
+										: styles.AppHeader__link;
 								}}
 								to={el.path}
 							>
