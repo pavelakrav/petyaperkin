@@ -6,8 +6,8 @@
   height: 7%;
   width:100%;
 
-  background: #6dc6b6;
-  color: #137c67;
+  background: var(--bg-color-dark);
+  color: whitesmoke;
   font-family: "Noto Sans";
   font-weight: bold;
   border-radius: 10px 10px 0 0;
