@@ -2,6 +2,8 @@
 	display: flex;
 	flex-direction: column;
 
+	height: 800px;
+
 	padding: 0 25px;
 }
 
@@ -12,8 +14,6 @@
 	letter-spacing: normal;
 	text-align: left;
 
-	/* margin-bottom: 10px; */
-
 	color: var(--font-color-dark);
 }
 .contacts__text {
@@ -22,10 +22,11 @@
 
 .contacts__text_marked {
 	color: var(--font-color-light);
+	cursor: pointer;
 
-	transition: 20s ease-in-out;
+	transition: 0.5s ease-in-out;
 }
 
 .contacts__text_marked:hover {
-	font-size: 1600px;
+	font-size: 50px;
 }

@@ -7,20 +7,16 @@ import Card from '../components/Card';
 const about = observer(() => {
 	const cardsContent = [
 		{
-			title: 'Hydrogen',
-			text: 'The system can be mounted with H2 fueling stations',
+			title: 'Mission',
+			text: 'Revolutionize the renewable energy sector by harnessing an untapped energy source',
 		},
 		{
-			title: 'Solar power',
-			text: 'AWINGEN wind turbines can be equipped with solar panels for additional output',
+			title: 'Vision',
+			text: 'Capture a significant share of the $1.5 trillion renewable energy market by 2027',
 		},
 		{
-			title: 'Combination',
-			text: 'Units are installed on the rooftops to power residental and industrial buildings',
-		},
-		{
-			title: 'Railroad',
-			text: 'Awingen wind turbines perfectly fit the railroad infrastructure both in the cities and in areas.',
+			title: 'Unique Selling Proposition',
+			text: 'Transforming Roadside Wind into Sustainable Power with Patented Technology',
 		},
 	];
 

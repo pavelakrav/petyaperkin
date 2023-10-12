@@ -3,13 +3,17 @@ import styles from '../styles/card.module.css';
 
 export default function Card({
 	title,
+	theme = 'dark',
 	icon,
 	text,
 	onClick = (e, title) => {},
 }) {
 	return (
-		<div className={styles.card}>
-			<div className={styles.card__hat} />
+		<div
+			className={`${styles.card} ${
+				theme === 'light' ? styles.light : styles.dark
+			}`}
+		>
 			<div className={styles.card__title}>{title}</div>
 			<div
 				className={styles.card__button}

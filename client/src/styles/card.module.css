@@ -1,100 +1,48 @@
 .card {
-    position: relative;
-    width: 260px;
-    height: 220px;
+	position: relative;
+	width: 260px;
+	height: 220px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
 
-    padding: 40px;
-    border-radius: 50px;
-    background: white;
-
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+	padding: 30px;
+	border-radius: 50px;
+	background: transparent;
 }
 
 .card__title {
-    color: #137c67;
-    font-size: 26px;
-    font-family: "Noto Sans";
-    font-weight: bold;
-    text-align: center;
+	font-size: 26px;
+	font-family: 'Noto Sans';
+	font-weight: bold;
+	text-align: center;
 }
 
-
-.card__button:hover{
-    cursor:pointer;
+.dark {
+	color: var(--font-color-dark);
 }
 
-.Video__Wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 600px;
-    height: 500px;
-    border-radius: 30px;
-    z-index: 2;
-  }
+.light {
+	color: var(--font-color-light);
+}
+
+.card__button:hover {
+	cursor: pointer;
+}
+
 .card__text {
-    font-family: "Noto Sans";
-    font-weight: lighter;
-    text-align: center;
+	font-size: 18px;
+	font-family: 'Noto Sans';
+	font-weight: lighter;
+	text-align: center;
 }
 
-.card__hat {
-    position: absolute;
-    top: -30px;
-
-    width: 0;
-    height: 0;
-    border-width: 70px 110px 20px;
-    border-style: solid;
-    border-color: #23d6b3 #23d6b3 transparent;
-}
-
-@media only screen and (max-width: 1000px){
-    .card {
-        position: relative;
-        width: 400px;
-        height: 300px;
-    
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        flex-direction: column;
-    
-        padding: 40px;
-        border-radius: 50px;
-        background: white;
-    
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-    }
-
-    .AppHeader__title {
-        font-family: "Monoton", regular;
-        font-size: 96px;
-        text-transform: uppercase;
-        color: #23d6b3;
-        z-index: 4;
-    }
-
-    .AppFooter {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      
-        max-height: 30%;
-        width:100%;
-      
-        background: #6dc6b6;
-        color: #137c67;
-        font-family: "Noto Sans";
-        font-weight: bold;
-        border-radius: 10px 10px 0 0;
-      
-        z-index: 4;
-      }
-
+@media only screen and (min-width: 1000px) {
+	.card {
+		position: relative;
+		width: 400px;
+		height: 250px;
+	}
 }

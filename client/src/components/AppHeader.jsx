@@ -32,7 +32,7 @@ export default function AppHeader() {
 		{ path: PATENTS_ROUTE, label: 'Patents' },
 		{ path: PRODUCT_ROUTE, label: 'Product' },
 		{ path: USE_CASES_ROUTE, label: 'Use cases' },
-		{ path: FOR_INVESTORS, label: 'For investors' },
+		{ path: FOR_INVESTORS, label: 'Investor' },
 		{ path: CONTACTS, label: 'Contacts' },
 	];
 	return (
