@@ -1,16 +1,35 @@
 .AppFooter {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 25px;
 
-  height: 7%;
-  width:100%;
+	background: var(--bg-color-dark);
+	color: var(--font-color-light);
+	font-family: 'Noto Sans';
+	font-weight: bold;
 
-  background: var(--bg-color-dark);
-  color: whitesmoke;
-  font-family: "Noto Sans";
-  font-weight: bold;
-  border-radius: 10px 10px 0 0;
+	z-index: 4;
+}
 
-  z-index: 4;
+.logo {
+	display: flex;
+	align-items: center;
+
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.contacts__list {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+
+	gap: 30px;
+}
+
+.contacts__list__col__title {
+	font-size: 20px;
+}
+.contacts__list__col {
+	padding: 15px;
 }

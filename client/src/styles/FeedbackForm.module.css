@@ -1,0 +1,9 @@
+.form__container {
+	display: flex;
+	flex-direction: column;
+
+	background: var(--bg-color-light);
+
+	border-radius: var(--bg-radius-default);
+	padding: 20px;
+}

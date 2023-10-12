@@ -5,8 +5,8 @@ import Modal from '../components/Modal';
 import styles from '../styles/cardVideos.module.css';
 import playBtn from '../images/play.png';
 import Awingen_Prewiev from '../images/Awingen_Preview.png';
-import Background from '../images/background_Beauty.jpg'
-import Cliffs from '../images/Cliffs.jpg'
+import Background from '../images/background_Beauty.jpg';
+import Cliffs from '../images/Cliffs.jpg';
 
 const cases = observer(() => {
 	const [isModalVisible, setIsModalVisible] = useState(false);
@@ -26,26 +26,23 @@ const cases = observer(() => {
 				{CardContent.map((content) => {
 					return (
 						<>
-
-
 							<div className={styles.cardVideos}>
 								<img
 									src={Awingen_Prewiev}
 									className={styles.smallVideo}
 									alt="pic"
 								/>
-									<a 
+								<a
+									className={styles.play_btn}
+									onClick={onClickHandler}
+								>
+									<img
+										src={playBtn}
 										className={styles.play_btn}
-										onClick={onClickHandler}
-									>
-										<img
-											src={playBtn}
-											className={styles.play_btn}
-											alt="pic"
-										/>
-									</a>
+										alt="pic"
+									/>
+								</a>
 							</div>
-							
 						</>
 					);
 				})}
