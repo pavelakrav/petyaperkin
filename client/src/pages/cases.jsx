@@ -6,6 +6,7 @@ import styles from '../styles/cardVideos.module.css';
 import playBtn from '../images/play.png';
 import Awingen_Prewiev from '../images/Awingen_Preview.png';
 import Potential from "../images/Potential_Photo.avif";
+import Awingen_Trim from "../images/Awingen.mp4"
 
 const cases = observer(() => {
 	const [isModalVisible, setIsModalVisible] = useState(false);
@@ -53,7 +54,18 @@ const cases = observer(() => {
 						onClick={(event) => {
 							event.stopPropagation();
 						}}
-					></div>
+					>
+					<video
+						className={styles.Modal_Video}
+						playsInline
+						disablePictureInPicture
+						controls
+						//autoPlay
+						muted
+					>
+						<source src={Awingen_Trim} type="video/mp4" />
+					</video>
+					</div>
 				</Modal>
 			)}
 		</>
