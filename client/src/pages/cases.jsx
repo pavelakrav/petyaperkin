@@ -5,8 +5,7 @@ import Modal from '../components/Modal';
 import styles from '../styles/cardVideos.module.css';
 import playBtn from '../images/play.png';
 import Awingen_Prewiev from '../images/Awingen_Preview.png';
-import Background from '../images/background_Beauty.jpg';
-import Cliffs from '../images/Cliffs.jpg';
+import Potential from "../images/Potential_Photo.avif";
 
 const cases = observer(() => {
 	const [isModalVisible, setIsModalVisible] = useState(false);
@@ -28,7 +27,7 @@ const cases = observer(() => {
 						<>
 							<div className={styles.cardVideos}>
 								<img
-									src={Awingen_Prewiev}
+									src={Potential}
 									className={styles.smallVideo}
 									alt="pic"
 								/>

@@ -32,6 +32,11 @@
     border-radius: 30px;
     z-index:1
   }
+  .play_btn:hover{
+    cursor: pointer;
+    transition: 800ms;
+    transform: rotate(180deg);
+  }
   .play_btn{
     position:relative;
     margin:0 auto;
